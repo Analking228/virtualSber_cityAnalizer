@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(new File("src/city_ru.csv"))) {
-            scanner.useDelimiter("\n");
+            scanner.useDelimiter("\r\n");
             ArrayList<City> cityArray = new ArrayList<>();
             CityFactory cityFactory = new CityFactory();
             while (scanner.hasNext()) {
