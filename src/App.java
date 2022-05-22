@@ -1,7 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class App {
@@ -13,7 +12,6 @@ public class App {
             while (scanner.hasNext()) {
                 cityArray.add(cityFactory.createCityObj(scanner.next().split(";")));
             }
-            System.out.println(cityArray.get(900));
             for (City c : cityArray) {
                 System.out.println(c);
             }
